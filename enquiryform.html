@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enquiry Form</title>
+	<style>
+		.container{
+			border: 1px solid red;
+			width: 960px;
+	/*		position: relative;*/
+			margin:0 auto;
+			line-height: 1.4em;
+			padding-bottom: 20px;
+		}
+		img {
+			width: 40%;
+			height: 100px;
+			margin:0;
+		}
+
+		#heading {
+			margin-right: 540px;
+			padding-left: 10px;
+		}
+
+		#date {
+		/*	position: relative;*/
+		    margin-left: 800px;
+		    margin-bottom: 14px;
+		    margin-top: -45px;
+		}
+		#cap {
+			font-size: 10px;
+		}
+
+		table,tr,td {
+			border-collapse: collapse;
+		}
+		table{
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<!-- LOGO -->
+		<img src="graphic.png">
+		<br><br>
+		<!-- Heading and Date  -->
+		<div id="heading">
+		<h1>ENQUIRY FORM<span id="cap">(USE CAPITAL LETTER ONLY)</span></h1>
+	</div>
+		<div id="date"><input type="date">
+		</div>
+		<!-- horizontal line -->
+		<hr color="red">
+		<br><br>
+
+		<form> 
+			<table border="1" cellpadding="8">
+				<tr>
+					<td> Candidate's Name </td>
+					<td colspan="3"> 
+						 <input type="text" placeholder="Candidate's Name">
+						</td>
+				</tr>
+				<tr>
+					<td> Father's Name </td>
+					<td colspan="3"> 
+						 <input type="text" placeholder="Father's Name">
+						</td>
+				</tr>
+
+				<tr>
+					<td> Gender </td>
+					<td> 
+						<!-- label so click on text also work try it -->
+						<label>
+						 Male<input type="radio"  name="gender" value="m">
+						</label>
+					</td>
+					<td colspan="2"> 
+						<label>
+						 Female<input type="radio"  name="gender" value="f">
+						</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Address for Correspondence 
+					</td>
+					<td colspan="3">
+						<textarea style="resize: none;" rows="5" cols="60"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td> Father's Phone No. </td>
+					<td>
+					<input type="text" placeholder="Father's Phone No">
+					</td>
+					<td> Candidate Phone No. </td>
+					<td>
+					<input type="text" placeholder="Candidate Phone No.">
+					</td>
+				</tr>
+
+					<tr>
+					<td> Student Email address: </td>
+					<td colspan="3">
+					<input type="text" placeholder="Student Email address">
+					</td>
+				</tr>
+
+					<tr>
+					<td> Father's/Guardian's E-Mail Address </td>
+					<td colspan="3">
+					<input type="text" placeholder="Father's/Guardian's E-Mail Address">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="4"> Education Qualification </td>
+					</tr>
+						<tr>
+							<td colspan="4">
+					<table border="1" cellpadding="10">
+						<tr>
+							<th> Class </th>
+							<th> Exam Passed / Appearing </th>
+							<th> Board / University </th>
+							<th> Year </th>
+							<th> Percentage </th>
+						</tr>
+
+						<tr>
+							<td> 10th </td>
+							<td>
+								<input type="text" placeholder="Exam Passed / Appearing">
+							</td>
+							<td>
+								<input type="text" placeholder="Board / University">
+							</td>
+							<td>
+								<select>
+									<option disabled selected>Year</option>
+									<option>2000</option>
+									<option>2001</option>
+									<option>2002</option>
+									<option>2003</option>
+									<option>2004</option>
+									<option>2005</option>
+									<option>2006</option>
+									<option>2007</option>
+									<option>2008</option>
+									<option>2009</option>
+									<option>2010</option>
+									<option>2011</option>
+									<option>2012</option>
+									<option>2013</option>
+									<option>2014</option>
+									<option>2015</option>
+									<option>2016</option>
+									<option>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+								</select>
+							</td>
+							<td>
+								<input type="text" placeholder="Percentage">
+							</td>
+						</tr>
+
+						<tr>
+							<td> 12th </td>
+							<td>
+								<input type="text" placeholder="Exam Passed / Appearing">
+							</td>
+							<td>
+								<input type="text" placeholder="Board / University">
+							</td>
+							<td>
+								<select>
+									<option disabled selected> Year </option>
+									<option>2000</option>
+									<option>2001</option>
+									<option>2002</option>
+									<option>2003</option>
+									<option>2004</option>
+									<option>2005</option>
+									<option>2006</option>
+									<option>2007</option>
+									<option>2008</option>
+									<option>2009</option>
+									<option>2010</option>
+									<option>2011</option>
+									<option>2012</option>
+									<option>2013</option>
+									<option>2014</option>
+									<option>2015</option>
+									<option>2016</option>
+									<option>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+								</select>
+							</td>
+							<td>
+								<input type="text" placeholder="Percentage">
+							</td>
+						</tr>
+
+						<tr>
+							<td> Graduation </td>
+							<td>
+								<input type="text" placeholder="Exam Passed / Appearing">
+							</td>
+							<td>
+								<input type="text" placeholder="Board / University">
+							</td>
+							<td>
+								<select>
+									<option disabled selected>Year</option>
+									<option>2000</option>
+									<option>2001</option>
+									<option>2002</option>
+									<option>2003</option>
+									<option>2004</option>
+									<option>2005</option>
+									<option>2006</option>
+									<option>2007</option>
+									<option>2008</option>
+									<option>2009</option>
+									<option>2010</option>
+									<option>2011</option>
+									<option>2012</option>
+									<option>2013</option>
+									<option>2014</option>
+									<option>2015</option>
+									<option>2016</option>
+									<option>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+								</select>
+							</td>
+							<td>
+								<input type="text" placeholder="Percentage">
+							</td>
+						</tr>
+
+						<tr>
+							<td> Others </td>
+							<td>
+								<input type="text" placeholder="Exam Passed / Appearing">
+							</td>
+							<td>
+								<input type="text" placeholder="Board / University">
+							</td>
+							<td>
+								<select>
+									<option disabled selected>Year</option>
+									<option>2000</option>
+									<option>2001</option>
+									<option>2002</option>
+									<option>2003</option>
+									<option>2004</option>
+									<option>2005</option>
+									<option>2006</option>
+									<option>2007</option>
+									<option>2008</option>
+									<option>2009</option>
+									<option>2010</option>
+									<option>2011</option>
+									<option>2012</option>
+									<option>2013</option>
+									<option>2014</option>
+									<option>2015</option>
+									<option>2016</option>
+									<option>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+								</select>
+							</td>
+							<td>
+								<input type="text" placeholder="Percentage">
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Program intresred in</td>
+					<td colspan="3">
+						<input type="text" placeholder="Program intresred in">
+				</tr>
+
+				<tr>
+					<td> Campus Choice </td>
+					<td>
+						<label>
+						GEU Dehradun<input type="radio" name="campus" value="geu">
+					</label>
+					</td>
+					<td>
+						<label>
+						GEHU Dehradun<input type="radio" name="campus" value="gehu">
+					</label>
+					</td>
+					<td>
+						<label>
+						GEHU Bhimtal<input type="radio" name="campus" value="gehub">
+					</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+					Entrance Exam appeared(CAT|MAT|JEE Mains):
+				</td>
+				</tr>
+
+				<tr>
+					<td> Roll NO. </td>
+					<td>
+						<input type="text" placeholder="Roll No">
+					</td>
+					<td> Score/Percentile </td>
+					<td>
+						<input type="text" placeholder="Score/Percentile">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="4">
+			How did you come to know about Graphic Era Universtiy ? (Tick appropriate Box)
+					</td>
+				</tr>
+
+				<tr>
+			<td>
+				<label>
+				Digital Media
+				<input type="Radio" value="dm" name="c">
+			</label>
+			</td>
+			<td>
+				<label>
+				Print Media 
+				<input type="Radio" value="pm" name="c">
+				<label>
+			</td>
+			<td colspan="2">
+				<label>
+				Electronic Media 
+				<input type="Radio" value="em" name="c">
+			</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Any other Sources
+			</td>
+			<td colspan="3">
+				<input type="text" placeholder="Any other resourse"> (please specify the name)
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right" colspan="4">
+				<input type="text" placeholder="signature">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+			<td align="center"> Signature </td>
+		</tr>
+			</table>
+		<br><br>
+		<table border="1" cellpadding="10">
+				<tr>
+			<td> For Office use only </td>
+			<td>
+				<input type="text" placeholder="For Office use only">
+			</td>
+			<td>Office Name</td>
+			<td colspan="2">
+				<input type="text" placeholder="Office">
+			</td>
+		</tr>
+
+		<tr>
+			<td> Remark :</td>
+			<td colspan="3"> 
+				<textarea style="resize: none;" rows="4" cols="80" ></textarea>
+		</tr>
+
+		<tr>
+			<td>Registration No.</td>
+			<td colspan="2">
+				<input type="text" placeholder="Registration No">
+			</td>
+			<td>
+				<input type="text" placeholder="Signature"><br>
+				Admission Counsellor's
+		</tr>
+		</table>
+		</form>
+	</div>
+
+</body>
+</html>
